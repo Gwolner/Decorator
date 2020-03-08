@@ -12,21 +12,30 @@ Sendo assim, este projeto faz uso do padrão estrutural Decorator para sanar est
 
 ## GoF Decorator
 
-fdgsdfgsdfdsfhfhf
+Se quisermos atribuir dinamicamente os condimentos conforme necessidade precisamos entender como o código está estruturado no padrão adotado. Temos uma classe Bebida abstrata (podia ser uma interface, mas a norma que define o padrão decorator defende que seja usado uma classe abstrata). Dela herdam os filhos concretos que serão as bebidas que podem ser servidas com ou sem condimentos.
+
+Uma outra classe abstrata chamada Decorador herda de Bebida e tambem contém uma variável do tipo bebida. Os condimentos, chamados aqui de decoradores, herdam de Decorador e implementam os métodos abstratos de Bebida.
+
 
 ```java
-//Estação de Monitoramento Climático
-public class WeatherStation {
-    pf);
+public class StarbuzzCoffee {
+    
+    public static void main(String[] args){
+        
+        Bebida bebida = new CafePreto();
+        bebida = new Leite(bebida);
+        bebida = new Chocolate(bebida);
+        
+       System.out.println("Seu pedido foi "+bebida.getDescricao());
+       System.out.println("Custo total é de: "+bebida.getCusto());
     }
 }
 ```
 
 ```java
 //Saída
-Current condition: 80.0Fº degress and 65.0 humididy
-Current condition: 82.0Fº degress and 70.0 humididy
-Current condition: 78.0Fº degress and 90.0 humididy
+Seu pedido foi Café preto, Leite, Chocolate
+Custo total é de: 2.6
 ```
 
 ## Ideia do projeto
