@@ -1,6 +1,6 @@
 # Starbuzz Coffee
 
-Sistema de venda de bebidas (cafés e achocolatado) que se utiliza do design patterns Decorator para acrescentar condimentos (chocolate, leite, chantilly, etc) e manter coerente o cálculo do preço total.
+> Sistema de venda de bebidas (cafés e achocolatado) que se utiliza do design patterns Decorator para acrescentar condimentos (chocolate, leite, chantilly, etc) e manter coerente o cálculo do preço total.
 
 ## Problema
 
