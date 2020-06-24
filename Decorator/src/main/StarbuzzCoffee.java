@@ -1,4 +1,4 @@
-package decorator;
+package main;
 
 import abstrato.bebida.Bebida;
 import modelos.bebida.*;
